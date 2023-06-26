@@ -63,14 +63,15 @@ header {
   width: 50%;
 }
 .card3 {
+  position: relative;
   width: 100%;
 }
 .card3 img {
-  width: 10%;
-  height: 10%;
+  width: 100%;
 }
+
 .btn {
-  position: relative;
-  top: 50px;
-  right: 100px;
+  position: absolute;
+  top: 120px;
+  left: 40px;
 }

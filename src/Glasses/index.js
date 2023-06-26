@@ -18,19 +18,17 @@ export default class Glasses extends Component {
     const { listGlasses } = this.state;
     return listGlasses.map((glass) => {
       return (
-        <>
-          <span key={glass.id}>
-            <img className="my-5 mx-4" src={glass.url} alt="hinh anh" />
-            <button
-              className="btn btn-warning"
-              onClick={() => {
-                this.handlChangeGlass(glass.url);
-              }}
-            >
-              Try it
-            </button>
-          </span>
-        </>
+        <div className="col-md-2" key={glass.id}>
+          <img className="my-5 mx-4" src={glass.url} alt="hinh anh" />
+          <button
+            className="btn btn-warning"
+            onClick={() => {
+              this.handlChangeGlass(glass.url);
+            }}
+          >
+            Try it
+          </button>
+        </div>
       );
     });
   }
@@ -78,11 +76,9 @@ export default class Glasses extends Component {
               />
             </div>
           </div>
-          <div className="col-sm-12 mt-5 ">
-            <div className="row card card3">
-              <div className="col-sm-12">{this.renderListGlass()}</div>
-            </div>
-          </div>
+        </div>
+        <div className="container">
+          <div className="row card3">{this.renderListGlass()}</div>
         </div>
       </>
     );
