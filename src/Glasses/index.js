@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import data from "./dataGlasses.json";
-import { render } from "@testing-library/react";
+
 export default class Glasses extends Component {
   constructor(props) {
     super(props);
@@ -14,7 +14,7 @@ export default class Glasses extends Component {
       urlImg,
     });
   }
-  renderListGlass() {
+  renderListGlasses() {
     const { listGlasses } = this.state;
     return listGlasses.map((glass) => {
       return (
@@ -78,7 +78,7 @@ export default class Glasses extends Component {
           </div>
         </div>
         <div className="container">
-          <div className="row card3">{this.renderListGlass()}</div>
+          <div className="row card3">{this.renderListGlasses()}</div>
         </div>
       </>
     );
