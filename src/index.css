@@ -1,13 +1,76 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+header {
+  position: relative;
+  font-size: 30px;
+}
+.carousel {
+  background-image: url(./../public/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+.card {
+  position: relative;
+}
+.card img {
+  width: 100%;
+}
+.card1 {
+  width: 350px;
+  height: 550px;
+}
+.card-body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(228, 195, 152);
+}
+.card-title {
+  color: blue;
+}
+.card-text {
+  color: white;
+}
+.putGlass1 {
+  position: absolute;
+  top: 100px;
+  left: 85px;
+}
+.card .putGlass1 {
+  width: 50%;
+}
+.card2 {
+  width: 350px;
+}
+.putGlass2 {
+  position: absolute;
+  top: 110px;
+  left: 87px;
+}
+.card .putGlass2 {
+  width: 50%;
+}
+.card3 {
+  width: 100%;
+}
+.card3 img {
+  width: 10%;
+  height: 10%;
+}
+.btn {
+  position: relative;
+  top: 50px;
+  right: 100px;
 }
